@@ -1,4 +1,4 @@
-<img width="1350" height="700" alt="Figure_1" src="https://github.com/user-attachments/assets/f9136990-4027-49f7-9478-e75b497f9fb8" /># Logistic Map Simulator
+Logistic Map Simulator
 
 A MATLAB-based educational simulator for exploring the behavior of the **logistic map** and its transition from periodic to chaotic dynamics.
 
