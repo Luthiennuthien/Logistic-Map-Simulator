@@ -205,7 +205,7 @@ while True:
         x = float(input("Initial Condition? "))
         transient = int(input("Transient Iterations? "))
         N = int(input("Iterations for Entropy calc "))
-        Block_Length = int(input("block lengths didddy nigga "))
+        Block_Length = int(input("block lengths "))
 
         block_entropy = []
         sorted_block_entropy = []
@@ -261,7 +261,7 @@ while True:
             x0 = float(input("Initial Condition? "))
             transient = int(input("Transient Iterations? "))
             N = int(input("Iterations for Entropy calc? "))
-            Block_Length = int(input("block lengths didddy nigga "))
+            Block_Length = int(input("block lengths"))
 
             r_values = np.linspace(r_min, r_max, r_points)
             entropy_values = []
