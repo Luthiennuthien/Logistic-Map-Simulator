@@ -11,10 +11,10 @@ def logistic_map(x, r):
 while True:
     print("\n Commands: \nr only\nbifurcation\nlyapunov\nlyapunov graph\nblock entropy\nblock entropy graph\nentropy convergence\nentropy vs lyapunov\n")
 
-    input = input("What operation would you like to do?")
+    console = input("What operation would you like to do?")
 
 
-    if input == "r only":
+    if console == "r only":
 
         r = float(input("R Value? "))
         x0 = float(input("Initial Condition? "))
@@ -72,7 +72,7 @@ while True:
         plt.ylim(0, 1)
         plt.show(block=False)
 
-    elif input == "bifurcation":
+    elif console == "bifurcation":
 
         r_min = float(input("Minimum R Value? "))
         r_max = float(input("Maximum R Value? "))
@@ -122,7 +122,7 @@ while True:
 
         plt.show(block=False)
         
-    elif input=="lyapunov":
+    elif console =="lyapunov":
        
 
         r = float(input("R Value? "))
@@ -150,7 +150,7 @@ while True:
         lyapunov = lyapunov / N
 
         print("Lyapunov exponent:", lyapunov)
-    elif input == "lyapunov graph":
+    elif console == "lyapunov graph":
 
         r_min = float(input("Minimum R Value? "))
         r_max = float(input("Maximum R Value? "))
@@ -200,7 +200,7 @@ while True:
         plt.grid(alpha=0.3)
         plt.show(block=False)
         
-    elif input == "block entropy":
+    elif console == "block entropy":
         r = float(input("R Value? "))
         x = float(input("Initial Condition? "))
         transient = int(input("Transient Iterations? "))
@@ -253,7 +253,7 @@ while True:
         
         print("Block Entropy:", entropy)
 
-    elif input == "block entropy graph":
+    elif console == "block entropy graph":
             r_min = float(input("Minimum R Value? "))
             r_max = float(input("Maximum R Value? "))
             r_points = int(input("Number of R Values? "))
@@ -315,7 +315,7 @@ while True:
             plt.grid(alpha=0.3)
             plt.show(block=False)
 
-    elif input == "entropy convergence":
+    elif console == "entropy convergence":
             r = float(input("R Value? "))
             x = float(input("Initial Condition? "))
             transient = int(input("Transient Iterations? "))
@@ -377,7 +377,7 @@ while True:
             plt.title(f"Entropy Increment $h_L$ vs $L$ (r = {r})")
             plt.grid(alpha=0.3)
             plt.show(block=False)
-    elif input == "entropy vs lyapunov":
+    elif console == "entropy vs lyapunov":
         r_min = float(input("Minimum R Value? "))
         r_max = float(input("Maximum R Value? "))
         r_points = int(input("Number of R Values? "))
